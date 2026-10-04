@@ -24,7 +24,9 @@ Every push to `main` redeploys the site.
 
 ## Structure
 ```
-index.html          page markup (8 sections)
+index.html          page markup (8 sections) + qualifier form pop-up
+book.html           calendar page for qualified leads
+not-a-fit.html      thank-you page for leads below the revenue threshold
 css/styles.css      all styles; brand colors and logo paths are CSS variables in :root
 js/main.js          scroll reveals, header color tint, interactive Score quiz
 assets/logos/       the eight logo marks (transparent PNG)
@@ -32,5 +34,6 @@ CLAUDE.md           project context for Claude Code
 ```
 
 ## Not wired up yet
-- The email forms are visual only. Connect them to an email service (Mailchimp, ConvertKit, etc.) before launch.
+- Every CTA opens the GoHighLevel qualifier form in a pop-up. Set its submit redirects in GoHighLevel to `book.html` (qualified) and `not-a-fit.html` (not qualified).
+- `book.html` still needs the calendar embed.
 - Placeholder content is flagged on the page; see CLAUDE.md for the open list.

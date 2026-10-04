@@ -14,4 +14,10 @@ function upd(){var n=0;boxes.forEach(function(b){if(b.checked)n++});
 if(!n){res.innerHTML='<b>Try it</b>Check the statements that sound like you.';return}
 var t=T[n];res.innerHTML='<b>'+n+' checked: '+t[0]+'</b>'+t[1];}
 boxes.forEach(function(b){b.addEventListener('change',upd)});
+var dlg=document.getElementById('qualify');
+if(dlg&&dlg.showModal){
+[].forEach.call(document.querySelectorAll('[data-form]'),function(b){b.addEventListener('click',function(e){e.preventDefault();dlg.showModal();document.documentElement.classList.add('modal-open')})});
+dlg.querySelector('[data-close]').addEventListener('click',function(){dlg.close()});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+dlg.addEventListener('close',function(){document.documentElement.classList.remove('modal-open')});}
 })();
