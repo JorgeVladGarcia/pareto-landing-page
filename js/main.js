@@ -16,7 +16,10 @@ var t=T[n];res.innerHTML='<b>'+n+' checked: '+t[0]+'</b>'+t[1];}
 boxes.forEach(function(b){b.addEventListener('change',upd)});
 var dlg=document.getElementById('qualify');
 if(dlg&&dlg.showModal){
-[].forEach.call(document.querySelectorAll('[data-form]'),function(b){b.addEventListener('click',function(e){e.preventDefault();dlg.showModal();document.documentElement.classList.add('modal-open')})});
+var fr=dlg.querySelector('iframe'),fb=dlg.querySelector('.modal-fb'),ready=false,org=new URL(fr.src).origin;
+window.addEventListener('message',function(e){if(e.origin===org){ready=true;fb.hidden=true}});
+[].forEach.call(document.querySelectorAll('[data-form]'),function(b){b.addEventListener('click',function(e){e.preventDefault();dlg.showModal();document.documentElement.classList.add('modal-open');
+setTimeout(function(){if(!ready&&dlg.open)fb.hidden=false},4000)})});
 dlg.querySelector('[data-close]').addEventListener('click',function(){dlg.close()});
 dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
 dlg.addEventListener('close',function(){document.documentElement.classList.remove('modal-open')});}

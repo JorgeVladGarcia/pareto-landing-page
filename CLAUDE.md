@@ -16,6 +16,7 @@ Other pages: `book.html` (calendar for qualified leads), `not-a-fit.html` (sorry
 - Logos in `assets/logos/`: 01 bottleneck (problem), 02 right hand (training), 03 filter (fly traps), 04 0.1% (proof, paid trial), 05 standout (brand mark, hero, final CTA), 06 unlock (offer), 07 handoff (ownership), 08 founder-operator (hours back).
 
 ## Rules
+- After changing `css/styles.css` or `js/main.js`, bump the `?v=` number on their links in all three HTML pages so browsers fetch the new files.
 - No prices on the page. No fake urgency or scarcity.
 - Do not invent facts. Anything unconfirmed stays flagged.
 
@@ -26,5 +27,6 @@ Other pages: `book.html` (calendar for qualified leads), `not-a-fit.html` (sorry
 - Guarantee fine print (eligibility, replacement window) not written. Founder2Founder now routes to customer support, not Kasim or Ivan.
 - Calendar embed not added yet: placeholder in `book.html`.
 - Revenue threshold on `not-a-fit.html` is a placeholder `[revenue threshold]`.
+- Strict blockers (e.g. Brave Shields aggressive) can block the GoHighLevel form; the pop-up then shows an "Open the form in a new tab" fallback after 4s. A GoHighLevel custom form domain would avoid the block.
 - Form redirects (qualified / not qualified) must be set in the form's settings in GoHighLevel, pointing to the live URLs of the two pages.
 - Decide who the follow-up emails come from; write the first email ("How many did you check?").

@@ -38,9 +38,11 @@ nav a{color:inherit;text-decoration:none}
 .modal{border:0;padding:0;width:min(600px,calc(100% - 32px));max-height:calc(100dvh - 32px);background:#fff;color:#0a0d10;overflow:auto}
 .modal::backdrop{background:rgba(10,13,16,.72)}
 .modal:not([open]){display:block;visibility:hidden;position:fixed;left:-200vw;pointer-events:none}
-.modal-in{position:relative;padding:48px 8px 8px}
+.modal-in{position:relative;padding:48px 8px 8px;overflow:hidden}
 .modal-x{position:absolute;top:8px;right:8px;width:40px;height:40px;border:0;background:#0a0d10;color:#fff;font:400 1.6rem/1 var(--sans);cursor:pointer}
 html.modal-open{overflow:hidden}
+.modal-fb{padding:8px 16px 24px}
+.modal-fb p{margin:0 0 18px;font-size:1.05rem}
 #hero{background:var(--turq);color:#0a0d10;padding:clamp(56px,8vw,96px) 0 clamp(80px,10vw,130px)}
 #proof{background:var(--alt)}
 #problem{background:var(--green);color:#fff}
