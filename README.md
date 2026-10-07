@@ -1,4 +1,4 @@
-# Pareto Talent: Right Hand Program landing page
+# Pareto Talent: The Founder's Not-To-Do List landing page
 
 Static landing page (HTML, CSS, JS). No build step.
 
@@ -24,16 +24,19 @@ Every push to `main` redeploys the site.
 
 ## Structure
 ```
-index.html          page markup (8 sections) + qualifier form pop-up
-book.html           calendar page for qualified leads
-not-a-fit.html      thank-you page for leads below the revenue threshold
-css/styles.css      all styles; brand colors and logo paths are CSS variables in :root
-js/main.js          scroll reveals, header color tint, interactive Score quiz
-assets/logos/       the eight logo marks (transparent PNG)
-CLAUDE.md           project context for Claude Code
+index.html          opt-in page for The Founder's Not-To-Do List (5 sections) + inline GoHighLevel form
+book.html           qualified leads: download + Matching Call calendar
+thank-you.html      everyone else: download + first steps
+not-a-fit.html      redirect to thank-you.html (keeps old form settings working)
+css/styles.css      all styles; theme colors and fonts are CSS variables in :root
+js/main.js          scroll reveals, smooth scroll to the form, blocked-form fallback
+assets/lead-magnet/ the PDF, its cover and the Week 1 page preview
+assets/logos/       logo marks (only 05-standout is used, as the header mark)
+docs/form-setup.md  GoHighLevel form fields, qualification rule, redirects, tags
+CLAUDE.md           project context and open items for Claude Code
 ```
 
 ## Not wired up yet
-- Every CTA opens the GoHighLevel qualifier form in a pop-up. Set its submit redirects in GoHighLevel to `book.html` (qualified) and `not-a-fit.html` (not qualified).
+- Configure the GoHighLevel form per `docs/form-setup.md`: qualified leads redirect to `book.html`, everyone else to `thank-you.html`, and everyone gets the delivery email.
 - `book.html` still needs the calendar embed.
-- Placeholder content is flagged on the page; see CLAUDE.md for the open list.
+- See CLAUDE.md for the full open list.
