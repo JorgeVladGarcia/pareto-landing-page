@@ -1,6 +1,6 @@
 # GoHighLevel form setup: The Founder's Not-To-Do List
 
-The form is built and edited in GoHighLevel, not in this repo. The page embeds it inline in the `#get` section of `index.html` (form id `TGYkhzpjc0vR83elIPbZ`, script `https://link.msgsndr.com/js/form_embed.js`). Configure it exactly as below. The page copy assumes this spec.
+The form is built and edited in GoHighLevel, not in this repo. The page embeds it inline in the `#get` section of `index.html` (form id `4AVSDnVleyoS9zJp5oya`, script `https://link.msgsndr.com/js/form_embed.js`). Configure it exactly as below. The page copy assumes this spec.
 
 ## Fields (in order)
 
@@ -60,4 +60,4 @@ Set in GoHighLevel: form settings → on submit → conditional redirect, or a w
 
 ## Embed height
 
-The iframe on the page starts at `height:980px` with `data-height="980"`. If the finished form is taller or shorter, update both values in `index.html` together.
+The iframe on the page is `height:702px` with `data-height="702"` (the height GoHighLevel set for "FP | Jorge Garcia | Form"). If the finished form is taller or shorter, update both values in `index.html` together.

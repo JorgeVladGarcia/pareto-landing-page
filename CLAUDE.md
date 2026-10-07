@@ -21,7 +21,7 @@ Header (brand, nav What's inside · Who it's for · Proof, "Get the list" button
 5. CTA with the form `#get`: pitch + inline GoHighLevel form.
 
 ## Form rule
-Every CTA scrolls to `#get` (smooth scroll in `js/main.js`). No pop-up. The form is the GoHighLevel/LeadConnector embed, form id `TGYkhzpjc0vR83elIPbZ`, script `form_embed.js`, inline iframe at 980px (`height` and `data-height` must match). If the iframe hasn't posted a message from its origin after 4s, the page shows "Open the form in a new tab". Qualified = role Founder/CEO or Co-founder AND revenue $100K+ AND profitable "Yes". Full spec in `docs/form-setup.md`; page copy must match it.
+Every CTA scrolls to `#get` (smooth scroll in `js/main.js`). No pop-up. The form is the GoHighLevel/LeadConnector embed, form id `4AVSDnVleyoS9zJp5oya`, script `form_embed.js`, inline iframe at 702px (`height` and `data-height` must match). If the iframe hasn't posted a message from its origin after 4s, the page shows "Open the form in a new tab". Qualified = role Founder/CEO or Co-founder AND revenue $100K+ AND profitable "Yes". Full spec in `docs/form-setup.md`; page copy must match it.
 
 ## Theme
 Matches paretotalent.com (meta theme-color #10B981) and the lead-magnet PDF. Dark theme only. All tokens in `:root` in `css/styles.css`:
@@ -43,7 +43,7 @@ Matches paretotalent.com (meta theme-color #10B981) and the lead-magnet PDF. Dar
 ## Open items
 - Confirm theme tokens against the live paretotalent.com CSS (taken from the meta theme color and the PDF).
 - Get written permission to reuse the three testimonials (public on the wall of love, but reuse permission isn't on file).
-- Configure the GoHighLevel fields, conditional redirects, tags and delivery email per `docs/form-setup.md`. Then check the 980px iframe height against the real form.
+- Configure the GoHighLevel fields, conditional redirects, tags and delivery email per `docs/form-setup.md`. If fields change, update the iframe height (702px) to match.
 - Paste the calendar embed into `book.html` (placeholder inside `.cal-in`).
 - Decide who sends the follow-up emails.
 - "1 in 1,000" works out to a tenth of a percent, not 1%. Both phrasings are on paretotalent.com and were kept as approved, but they don't agree. Confirm which one the site means.
