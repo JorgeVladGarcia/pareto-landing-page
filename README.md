@@ -26,7 +26,7 @@ Every push to `main` redeploys the site.
 ```
 index.html          opt-in page for The Founder's Not-To-Do List (5 sections) + GoHighLevel form (pop-up and inline)
 book.html           qualified leads: download + Matching Call calendar
-thank-you.html      everyone else: download + first steps
+thank-you.html      everyone else: friendly thank-you, no list
 not-a-fit.html      redirect to thank-you.html (keeps old form settings working)
 css/styles.css      all styles; theme colors and fonts are CSS variables in :root
 js/main.js          scroll reveals, form pop-up, hero carousel, blocked-form fallback
@@ -38,5 +38,4 @@ CLAUDE.md           project context and open items for Claude Code
 
 ## Not wired up yet
 - Configure the GoHighLevel form per `docs/form-setup.md`: qualified leads redirect to `book.html`, everyone else to `thank-you.html`, and qualified leads get the delivery email.
-- `book.html` still needs the calendar embed.
 - See CLAUDE.md for the full open list.

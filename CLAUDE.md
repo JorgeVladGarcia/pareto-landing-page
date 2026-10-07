@@ -1,13 +1,13 @@
 # Project context
 
-Lead-magnet opt-in page for Pareto Talent's Right Hand Program (founders: Kasim Aslam and Ivan Bunin). The page sells one free download, **The Founder's Not-To-Do List**: 50 tasks to hand off in 30 days and get your week back (a 9-page fillable PDF). The opt-in form also qualifies the lead. Qualified founders go to `book.html` to book a Matching Call. Everyone else goes to `thank-you.html`. Everyone gets the list: qualified leads by email and download, everyone else by download on the thank-you page (no email).
+Lead-magnet opt-in page for Pareto Talent's Right Hand Program (founders: Kasim Aslam and Ivan Bunin). The page sells one free download, **The Founder's Not-To-Do List**: 50 tasks to hand off in 30 days and get your week back (a 9-page fillable PDF). The opt-in form also qualifies the lead. Qualified founders go to `book.html` to book a Matching Call. Everyone else goes to `thank-you.html`. Only qualified leads get the list (email + download on `book.html`). Everyone else gets a thank-you page, no list.
 
 Static HTML/CSS/JS on GitHub Pages, no build step. Live at https://jorgevladgarcia.github.io/pareto-landing-page/
 
 ## Page map
 - `index.html`: the opt-in page (five sections, below).
-- `book.html`: qualified leads. Compact top (H1, offer, download card) so the calendar is visible right away, then what happens next, prep note, Matching Guarantee, mini proof row. noindex.
-- `thank-you.html`: not-qualified leads. Says plainly but warmly that they're not a match for the Right Hand Program yet, and that the list is theirs to download. Download button, the five hand-off rules, first five Week 1 tasks, soft future line. No email delivery, no calendar, booking link or proof stats. Never "sorry". noindex.
+- `book.html`: qualified leads. Compact top (H1, offer, download card) so the calendar is visible right away, then the GoHighLevel booking widget (calendar `qUd4DKftRhP8VgIBWojp`, inside `.cal-in`), what happens next, prep note, Matching Guarantee, mini proof row. noindex.
+- `thank-you.html`: not-qualified leads. Friendly thank-you only: no list, no download, no email. Never says why they didn't qualify (no revenue or profitability mention, never "sorry"). Invites them to come back and fill in the form again later. noindex.
 - `not-a-fit.html`: meta-refresh redirect to `thank-you.html`, kept so old GoHighLevel settings still land. noindex.
 - `docs/form-setup.md`: the GoHighLevel form spec (fields, qualification rule, redirects, tags, delivery email).
 - `assets/lead-magnet/`: the PDF, `cover.png` (page 1, hero mockup and og:image), `week-1-preview.png` (page 3).
@@ -44,7 +44,6 @@ Matches paretotalent.com (meta theme-color #10B981) and the lead-magnet PDF. Dar
 - Confirm theme tokens against the live paretotalent.com CSS (taken from the meta theme color and the PDF).
 - Get written permission to reuse the three testimonials (public on the wall of love, but reuse permission isn't on file).
 - Configure the GoHighLevel fields, conditional redirects, tags and delivery email per `docs/form-setup.md`. If fields change, update the iframe height (759px) to match.
-- Paste the calendar embed into `book.html` (placeholder inside `.cal-in`).
 - Carousel originals (PNG) are kept in `assets/lead-magnet/carousel/_originals/`, git-ignored. Re-export at 880px wide JPEG if images change.
 - Style the form's submit button in GoHighLevel per `docs/form-setup.md` (it can't be styled from this repo).
 - Decide who sends the follow-up emails.

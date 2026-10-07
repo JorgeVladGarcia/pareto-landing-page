@@ -56,7 +56,7 @@ Set in GoHighLevel: form settings → on submit → conditional redirect, or a w
 - Tag every contact `lm-not-to-do-list`, plus `qualified` or `nurture` according to the rule above.
 - **Qualified only:** send the delivery email with the PDF link, so the list arrives even if they close the tab:
   https://jorgevladgarcia.github.io/pareto-landing-page/assets/lead-magnet/the-founders-not-to-do-list.pdf
-- **Not qualified:** no delivery email. They download the list directly on `thank-you.html`.
+- **Not qualified:** no delivery email and no list. They land on `thank-you.html`, a friendly thank-you that invites them to come back later. It doesn't offer the list or say why they didn't qualify.
 - Save the "What's slipping most" answer to the contact so it can feed the Matching Call prep note and email segments.
 
 ## Submit button style
